@@ -14,7 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 }
 
 .music-player {
@@ -22,6 +22,7 @@
     width: 400px;
     padding: 25px 35px;
     text-align: center;
+    border-radius: 10px;
 }
 
 nav {
@@ -38,6 +39,11 @@ nav .circle {
     background-color: #FFFFFF;
     color: #38230b;
     box-shadow: 0px 5px 10px #38230b7a;
+    cursor: grab;
+}
+
+nav .circle:active {
+    cursor: grabbing;
 }
 
 .song-img {
@@ -107,4 +113,8 @@ nav .circle {
     background-color: #38230b;
     color: #FFFFFF;
     transform: scale(1.25);
+}
+
+.controls div:active {
+    cursor: grabbing;
 }
